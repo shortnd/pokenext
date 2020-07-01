@@ -20,7 +20,7 @@ export default function Home({ pokemon }){
 }
 
 export async function getStaticProps() {
-  const res = await fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=300");
+  const res = await fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=350");
   const pokemon = await res.json();
   return {
     props: {
