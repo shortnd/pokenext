@@ -27,7 +27,7 @@ export default function PokemonPage({ pokemon }) {
 }
 
 export async function getStaticPaths() {
-    const res = await fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=150")
+    const res = await fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=300")
     const pokemon = await res.json();
 
     const paths = pokemon.results.map((poke) => ({
